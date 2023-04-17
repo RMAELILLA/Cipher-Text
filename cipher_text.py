@@ -5,6 +5,10 @@ user_message = input('\033[1;32m Please enter your "message" in UPPERCASE LETTER
 # Get the key
 user_key = input('\033[1;33m Please enter your "key" also in UPPERCASE LETTERS: \n')
 # Translate letter to correspond values
+def translate(string, key): 
+  cipher_text = [] 
+  for i in range(len(string)): 
+    x = (ord(string[i]) +ord(key[i])) % 26
 # Repeat translation if not equal to length, message key
 # Add each column, excess minus 26
 # convert
