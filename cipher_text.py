@@ -23,5 +23,10 @@ def rpt_translate(string, key):
     return("" . join(key))
 # Add each column, excess minus 26
 # convert
+if __name__ == "__main__":
+   message = user_message
+   keyword = user_key
+   key = translate(message, keyword) 
+   cipher_text = (message,key)
 # display generated cipher text
 print("The cipher text of your input is : ", cipher_text )
