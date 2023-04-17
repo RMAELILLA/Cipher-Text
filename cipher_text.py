@@ -24,3 +24,4 @@ def rpt_translate(string, key):
 # Add each column, excess minus 26
 # convert
 # display generated cipher text
+print("The cipher text of your input is : ", cipher_text )
