@@ -22,6 +22,13 @@ def rpt_translate(string, key):
     cipher_text.append(chr(alphabet)) 
   return("" . join(cipher_text))
 # Add each column, excess minus 26
+def add_translated(cipher_text, key): 
+  v_cipher_text = [] 
+  for i in range(len(cipher_text)): 
+    alphabet = (ord(cipher_text[i]) -ord(key[i]) + 26) % 26
+    alphabet += ord('A') 
+    v_cipher_text.append(chr(alphabet)) 
+  return("" . join(v_cipher_text))
 # convert
 if __name__ == "__main__":
    message = user_message
