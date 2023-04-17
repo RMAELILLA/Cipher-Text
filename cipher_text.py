@@ -13,6 +13,8 @@ def translate(string, key):
     cipher_text.append(chr(x))
   return("" . join(cipher_text))
 # Repeat translation if not equal to length, message key
+def rpt_translate(string, key):
+    key = list(key)
 # Add each column, excess minus 26
 # convert
 # display generated cipher text
