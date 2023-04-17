@@ -34,4 +34,6 @@ if __name__ == "__main__":
    key = translate(user_message, user_key) 
    cipher_text = rpt_translate(user_message,key)
 # display generated cipher text
+print('\033[1;36m-' * 100)
 print("The cipher text of your input is : ", cipher_text )
+print("The Encrypted sentence is from : ", add_translated(cipher_text, key))
