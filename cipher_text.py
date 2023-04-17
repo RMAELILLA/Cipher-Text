@@ -31,9 +31,7 @@ def add_translated(cipher_text, key):
   return("" . join(v_cipher_text))
 # convert
 if __name__ == "__main__":
-   message = user_message
-   keyword = user_key
-   key = translate(message, keyword) 
-   cipher_text = (message,key)
+   key = translate(user_message, user_key) 
+   cipher_text = rpt_translate(user_message,key)
 # display generated cipher text
 print("The cipher text of your input is : ", cipher_text )
