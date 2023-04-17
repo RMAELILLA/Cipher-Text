@@ -14,6 +14,13 @@ def translate(string, key):
       key.append(key[i % len(key)])
   return("" . join(key))
 # Repeat translation if not equal to length, message key
+def rpt_translate(string, key): 
+  cipher_text = [] 
+  for i in range(len(string)): 
+    alphabet = (ord(string[i]) +ord(key[i])) % 26
+    alphabet += ord('A') 
+    cipher_text.append(chr(alphabet)) 
+  return("" . join(cipher_text))
 # Add each column, excess minus 26
 # convert
 if __name__ == "__main__":
